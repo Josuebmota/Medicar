@@ -10,17 +10,17 @@
 	  <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="6.0.2" />
 	  <PackageReference Include="AutoMapper" Version="11.0.1" />
 	  <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
-	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
 	  <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+	  <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.6" />
 	  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Src\Modules\Doctors\" />
-    <Folder Include="Src\Modules\Schedules\" />
-    <Folder Include="Src\Shared\Apllication\" />
-    <Folder Include="Src\Shared\Domain\" />
+    <Folder Include="Src\Modules\Doctor\Application\Controllers\" />
+    <Folder Include="Src\Modules\Doctor\Application\Services\" />
+    <Folder Include="Src\Modules\Doctor\Domain\Interfaces\Services\" />
+    <Folder Include="Src\Modules\Doctor\Infra\Ioc\" />
   </ItemGroup>
 
 </Project>

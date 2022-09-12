@@ -11,7 +11,7 @@ namespace Api.Src.Shared.Infra.Ioc.Factorys
         {
             connections.AddDbContext<ApplicationContext>(options =>
             {
-                options.UseSqlServer(Constants.ConnectionString);
+                options.UseNpgsql(Constants.ConnectionString);
             });
 
             return connections;
